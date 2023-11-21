@@ -4,17 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a364f1c6-3edd-44fb-9817-08f2aa12a083" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tads/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tads/documento.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tads/AppTest.java" afterDir="false" />
+    <list default="true" id="a364f1c6-3edd-44fb-9817-08f2aa12a083" name="Changes" comment="Init project">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tads/documento2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tads/documento3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tads/options/IndexerOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tads/options/MostRelevantFilesOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tads/options/SearchWordFrequencyOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tads/options/WordFrequencyOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tads/options/arguments/IndexerArgument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tads/options/arguments/MostRelevantFilesArgument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tads/options/arguments/SearchWordFrequencyArgument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tads/options/arguments/WordFrequencyArgument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tads/utils/CalculatorTermFrequencyInverseDocumentFrequency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tads/utils/ReaderFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tads/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tads/domain/BTreeDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tads/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tads/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tads/cli/ReaderCLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tads/cli/ReaderCLI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -42,7 +49,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/PC/Documents/tads/indexer/src/scripts"
+    "last_opened_file_path": "C:/Users/PC/Documents/tads/indexer/src/scripts",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -54,11 +62,14 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="TEXT_LOGS" value="true" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="com.tads.Main" />
       <module name="indexer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tads.*" />
+          <option name="PATTERN" value="com.tads.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,6 +92,43 @@
       <option name="presentableId" value="Default" />
       <updated>1700179122855</updated>
     </task>
+    <task id="LOCAL-00001" summary="Init project">
+      <option name="closed" value="true" />
+      <created>1700427711514</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700427711515</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init project" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.tads.BST" memberName="root" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="calculateTermFrequency(word, bst)" />
+        <watch expression="calculateInverseDocumentFrequency(bsts.size(), calculateFilesWithTerm(word, bsts))" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

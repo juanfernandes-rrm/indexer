@@ -1,10 +1,10 @@
 package com.tads.options;
 
-import com.tads.utils.ReaderFile;
 import com.tads.domain.BTreeDocument;
 import com.tads.options.arguments.SearchWordFrequencyArgument;
+import com.tads.utils.ReaderFile;
 
-import static java.util.Objects.isNull;
+import java.util.Optional;
 
 public class SearchWordFrequencyOption implements IndexerOption{
 
@@ -32,7 +32,8 @@ public class SearchWordFrequencyOption implements IndexerOption{
     }
 
     private static int searchFrequencyOfWord(BTreeDocument BTreeDocument, String wordSearch){
-        BTreeDocument.Node search = BTreeDocument.search(wordSearch);
-        return isNull(search) ? 0 : search.frequency;
+        return Optional.ofNullable(BTreeDocument.search(wordSearch))
+                .map(node -> node.frequency)
+                .orElse(0);
     }
 }

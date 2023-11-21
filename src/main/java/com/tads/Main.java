@@ -5,16 +5,10 @@ import com.tads.options.IndexerOption;
 
 public class Main {
     public static void main(String[] args) {
-
-                String[] simulatedArgs = {
-                "--freq",
-                "5",
-                "C:\\Users\\PC\\Desktop\\1gb.txt\\1gb.txt",
-        };
         long startTime = System.currentTimeMillis();
 
         try{
-            ReaderCLI readerCLI = new ReaderCLI(simulatedArgs);
+            ReaderCLI readerCLI = new ReaderCLI(args);
 
             IndexerOption indexerOption = readerCLI.getIndexerOption();
             indexerOption.execute();
